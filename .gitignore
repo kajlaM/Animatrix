@@ -1,7 +1,29 @@
+# Virtual environment
 .venv/
+venv/
+ENV/
+
+# Secrets and environment variables
 .env
-__pycache__/
-*.pyc
-.DS_Store
+.env.*
+!.env.example
+
+# SQLite Database
+animatrix.db
+animatrix.db-journal
+
+# Rendered media assets and temporary generation scripts
 media/
-Assignment_3/temp_scenes/
+temp_scenes/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
